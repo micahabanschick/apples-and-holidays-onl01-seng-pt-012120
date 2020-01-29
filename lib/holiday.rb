@@ -96,7 +96,7 @@ def all_supplies_in_holidays(holiday_hash)
       k = k.to_s.capitalize!
       k[k.length] = ":"
       v = v.join(", ")
-      puts "#{k} #{v}"
+      puts "\t#{k} #{v}"
     end 
   end 
 end
