@@ -88,7 +88,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   arr = []
   holiday_hash.keys.each{|key| key = key.to_s.capitalize!; key[key.length] = ":"; puts key}
-  
+  holiday_hash.each do |key, value|
+    key = key.to_s.capitalize!
+    key[key.length] = ":"
+    puts key
+  end 
 end
 
 def all_holidays_with_bbq(holiday_hash)
