@@ -89,10 +89,14 @@ def all_supplies_in_holidays(holiday_hash)
   arr = []
   holiday_hash.keys.each{|key| key = key.to_s.capitalize!; key[key.length] = ":"; puts key}
   holiday_hash.each do |key, value|
+    key = key.to_s.capitalize!
+    key[key.length] = ":"
+    puts key
     value.each do |k, v|
-      key = key.to_s.capitalize!
-      key[key.length] = ":"
-      puts key
+      k = k.to_s.capitalize!
+      k[k.length] = ":"
+      v = v.join(", ")
+      puts "#{k} #{v}"
     end 
   end 
 end
