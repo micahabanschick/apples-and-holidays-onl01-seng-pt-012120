@@ -87,8 +87,8 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   arr = []
-  holiday_hash.keys.each{|key| key = key.to_s.capitalize!; key[key.length] = ":"; arr << key}
-  puts arr
+  holiday_hash.keys.each{|key| key = key.to_s.capitalize!; key[key.length] = ":"; puts key}
+  
 end
 
 def all_holidays_with_bbq(holiday_hash)
