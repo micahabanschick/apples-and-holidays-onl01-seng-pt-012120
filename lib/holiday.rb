@@ -93,6 +93,7 @@ def all_supplies_in_holidays(holiday_hash)
     key[key.length] = ":"
     puts key
     value.each do |k, v|
+      if k.include?("")
       k = k.to_s.capitalize!
       k[k.length] = ":"
       v = v.join(", ")
